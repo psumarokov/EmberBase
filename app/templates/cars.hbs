@@ -1,3 +1,10 @@
+<h3>New Car:</h3>
+<form role="form" enctype="multipart/form-data" method="post" id="new_car">
+    <div>{{input type="text" value=model.brand}}</div>
+    <div>{{input type="text" value=model.model}}</div>
+    <div>{{input type="file" name="image" id="image"}}</div>
+    <button {{action 'add'}}>Add</button>
+</form>
 <h3>Cars:</h3>
 <div>
     <ul>
