@@ -1,8 +1,8 @@
-<h1>Cars:</h1>
+<h3>Cars:</h3>
 <div>
     <ul>
         {{#each car in model}}
-            <li>{{car.brand}}&nbsp;{{car.model}}</li>
+            <a href="/cars/{{car.id}}"><li>{{car.brand}}&nbsp;{{car.model}}</li></a>
         {{/each}}
     </ul>
 </div>
