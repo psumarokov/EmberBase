@@ -9,7 +9,7 @@
 <div>
     <ul>
         {{#each car in model}}
-            <a href="/cars/{{car.id}}"><li>{{car.brand}}&nbsp;{{car.model}}</li></a>
+            <li>{{#link-to 'car' car.id}}{{car.full_name}}{{/link-to}}</li>
         {{/each}}
     </ul>
 </div>

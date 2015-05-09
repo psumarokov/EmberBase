@@ -1,3 +1,3 @@
 <h3>Car:&nbsp;{{model.brand}}&nbsp;{{model.model}}</h3>
-<img src="{{model.img_host}}{{model.image}}" alt="{{model.brand}}" height=200 width=300 />
+<img {{bind-attr src=model.img_path}} alt="{{model.full_name}}" height=200 width=300 />
 <p><button {{action 'delete'}}>Delete</button></p>
